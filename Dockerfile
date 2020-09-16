@@ -1,7 +1,7 @@
-FROM alpine:3.8
+FROM alpine:3.12
 
-ENV EXPORTER_VERSION=1.4.1
-ENV VARNISH_VERSION=6.0.0
+ENV EXPORTER_VERSION=1.5.2
+ENV VARNISH_VERSION=6.4
 
 # To avoid not found error
 RUN mkdir /lib64 && ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2
